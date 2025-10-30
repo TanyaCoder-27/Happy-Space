@@ -220,8 +220,8 @@ curl -i -c cookie.txt -b cookie.txt http://localhost:5000/logout
 
 ## 7)📸 Visual Proof
 
-- ![OAuth login](./ss/1.png) OAuth login (Google/Facebook/GitHub screen )
-- ![Top Searches banner](./ss/2.png) Google Accounts (Gmails)
+- ![OAuth login](./ss/1.png)   OAuth login (Google/Facebook/GitHub screen )
+- ![Top Searches banner](./ss/2.png)   Google Accounts (Gmails)
 - ![Search results + multi-select](./ss/3.png) Initial page after logged in
 - ![Search history](./ss/4.png) Search Results , Search History and Multi-selected options
 - ![Favourites tab](./ss/5.png) Multi-Image Download
