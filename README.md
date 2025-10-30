@@ -220,20 +220,20 @@ curl -i -c cookie.txt -b cookie.txt http://localhost:5000/logout
 
 ## 7)📸 Visual Proof
 
-- ![OAuth login](./ss/1.png) OAuth login (Google/Facebook/GitHub screen + logged-in state)
-- ![Top Searches banner](./ss/2.png) Top Searches banner (chip buttons)
-- ![Search results + multi-select](./ss/3.png) Search results + multi‑select (checkboxes + Load More)
-- ![Search history](./ss/4.png) Search history (per‑user) sidebar
-- ![Favourites tab](./ss/5.png) Favourites tab
-- ![Downloads tab](./ss/6.png) Downloads tab
-- ![Fullscreen preview](./ss/7.png) Fullscreen image preview modal
-- ![Favourites tab](./ss/8.png) Favourites tab
-- ![Favourites tab](./ss/9.png) Favourites tab
-- ![Favourites tab](./ss/10.png) Favourites tab
-- ![Favourites tab](./ss/11.png) Favourites tab
+- ![OAuth login](./ss/1.png) OAuth login (Google/Facebook/GitHub screen )
+- ![Top Searches banner](./ss/2.png) Google Accounts (Gmails)
+- ![Search results + multi-select](./ss/3.png) Initial page after logged in
+- ![Search history](./ss/4.png) Search Results , Search History and Multi-selected options
+- ![Favourites tab](./ss/5.png) Multi-Image Download
+- ![Downloads tab](./ss/6.png) Downloads done
+- ![Fullscreen preview](./ss/7.png) Favourites tab
+- ![Favourites tab](./ss/8.png) Full Image model
+- ![Favourites tab](./ss/9.png) Downlaoded image view
+- ![Favourites tab](./ss/10.png) Sign in with Github
+- ![Favourites tab](./ss/11.png) Other user view of the page after logged in
 
 
-### Demo Video 🎥  
+### Demo Video for clear functionalities view 🎥  
 Watch the Happy Space walkthrough:  
 [Click to view on Google Drive](https://drive.google.com/file/d/1nYxEUFc9XbOW698Qy678krUMiDxeqKkS/view?usp=sharing)
 ---
