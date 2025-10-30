@@ -229,17 +229,7 @@ Add screenshots/GIFs to a `/docs` folder and reference them here:
 - [ ] Downloads tab
 - [ ] Fullscreen image preview modal
 
-Example:
-```
-/docs/
-  login-google.png
-  top-searches.png
-  results-multiselect.png
-  history.png
-  favourites.png
-  downloads.png
-  fullscreen-preview.png
-```
+
 
 ---
 
