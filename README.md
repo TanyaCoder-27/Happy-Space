@@ -221,7 +221,7 @@ curl -i -c cookie.txt -b cookie.txt http://localhost:5000/logout
 ## 7) Visual Proof Checklist (add to repo)
 Add screenshots/GIFs to a `/docs` folder and reference them here:
 
-- [ss/1.png ] OAuth login (Google/Facebook/GitHub screen + logged-in state)
+- [./ss/1.png ] OAuth login (Google/Facebook/GitHub screen + logged-in state)
 - [ss/2.png ] Top Searches banner (chip buttons)
 - [ss/3.png  ] Search results + multi‑select (checkboxes + Load More)
 - [ss/4.png  ] Search history (per‑user) sidebar
