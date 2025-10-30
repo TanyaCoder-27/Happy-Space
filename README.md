@@ -231,7 +231,8 @@ curl -i -c cookie.txt -b cookie.txt http://localhost:5000/logout
 - ![Favourites tab](./ss/9.png) Downlaoded image view
 - ![Favourites tab](./ss/10.png) Sign in with Github
 - ![Favourites tab](./ss/11.png) Other user view of the page after logged in
-
+- ![Favourites tab](./ss/12.png) MongoDB searches Table
+- ![Favourites tab](./ss/13.png) MongoDB users Table
 
 ### Demo Video for clear functionalities view 🎥  
 Watch the Happy Space walkthrough:  
