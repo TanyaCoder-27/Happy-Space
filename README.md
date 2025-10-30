@@ -218,20 +218,19 @@ curl -i -c cookie.txt -b cookie.txt http://localhost:5000/logout
 
 ---
 
-## 7) Visual Proof Checklist (add to repo)
-Add screenshots/GIFs to a `/docs` folder and reference them here:
+## 7)📸 Visual Proof
 
-- [./ss/1.png ] OAuth login (Google/Facebook/GitHub screen + logged-in state)
-- [ss/2.png ] Top Searches banner (chip buttons)
-- [ss/3.png  ] Search results + multi‑select (checkboxes + Load More)
-- [ss/4.png  ] Search history (per‑user) sidebar
-- [ss/5.png  ] Favourites tab
-- [ss/6.png  ] Downloads tab
-- [ ss/7.png ] Fullscreen image preview modal
-- [ss/8.png  ] Favourites tab
-- [ss/9.png  ] Favourites tab
-- [ss/10.png  ] Favourites tab
-- [ss/11.png  ] Favourites tab
+- ![OAuth login](./ss/1.png) OAuth login (Google/Facebook/GitHub screen + logged-in state)
+- ![Top Searches banner](./ss/2.png) Top Searches banner (chip buttons)
+- ![Search results + multi-select](./ss/3.png) Search results + multi‑select (checkboxes + Load More)
+- ![Search history](./ss/4.png) Search history (per‑user) sidebar
+- ![Favourites tab](./ss/5.png) Favourites tab
+- ![Downloads tab](./ss/6.png) Downloads tab
+- ![Fullscreen preview](./ss/7.png) Fullscreen image preview modal
+- ![Favourites tab](./ss/8.png) Favourites tab
+- ![Favourites tab](./ss/9.png) Favourites tab
+- ![Favourites tab](./ss/10.png) Favourites tab
+- ![Favourites tab](./ss/11.png) Favourites tab
 
 
 ### Demo Video 🎥  
