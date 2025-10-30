@@ -4,7 +4,7 @@ A joyful MERN application that lets authenticated users search Unsplash images, 
 
 ---
 
-## 1) What’s Included (per assignment)
+## 1) What’s Included
 
 - Full code in `/client` (React) and `/server` (Express + MongoDB + Passport)
 - OAuth + Unsplash integration (Google, Facebook, GitHub + Unsplash Search)
