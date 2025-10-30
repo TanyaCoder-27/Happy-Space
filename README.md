@@ -234,7 +234,9 @@ Add screenshots/GIFs to a `/docs` folder and reference them here:
 - [ss/11.png  ] Favourites tab
 
 
-
+### Demo Video 🎥  
+Watch the Happy Space walkthrough:  
+[Click to view on Google Drive](https://drive.google.com/file/d/1nYxEUFc9XbOW698Qy678krUMiDxeqKkS/view?usp=sharing)
 ---
 
 ## 8) Notes & Decisions
