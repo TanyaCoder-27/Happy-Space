@@ -1,0 +1,140 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginRoot {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7fa;
+}
+.loginCardWrap {
+    width: 900px;
+    height: 540px;
+    border-radius: 32px;
+    display: flex;
+    box-shadow: 0 10px 24px #0002;
+    overflow: hidden;
+    background: #fff;
+}
+.leftPanel {
+    flex: 1;
+    background: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?fit=crop&w=800&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    min-width: 0;
+}
+.leftOverlay {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: #fff;
+    z-index: 2;
+    background: rgba(30, 18, 41, 0.55);
+    padding: 30px 32px 20px 24px;
+    border-radius: 18px;
+    max-width: 320px;
+    box-shadow: 0 4px 16px #0005;
+}
+.missionTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.3px;
+}
+.missionTagline {
+    font-size: 1.25rem;
+    color: #e8b04e;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.rightPanel {
+    flex: 1.1;
+    background: #211e31;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 0;
+}
+.loginContent {
+    width: 90%;
+    max-width: 330px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.03);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 1px 18px #0003;
+    padding: 28px 30px 29px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginHeader {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+.loginSubtitle {
+    font-size: 1.05em;
+    color: #ccc;
+    margin-bottom: 1.2em;
+    text-align: center;
+}
+.oauthBtn {
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 10px;
+    background: #292643;
+    color: #fff;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.18s, color 0.18s, box-shadow 0.16s;
+    box-shadow: 0 2px 8px #0002;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+.oauthBtn:first-of-type { margin-top: 0; }
+.oauthBtn:hover {
+    background: #f19d38;
+    color: #211e31;
+}
+.oauthBtn.google { background: #fff; color: #222; border: 1.6px solid #e1e5ee; }
+.oauthBtn.google:hover { background: #f3f8ff; color: #dc4937; }
+.oauthBtn.facebook { background: #3b5998; color: #fff; }
+.oauthBtn.facebook:hover { background: #4868b0; }
+.oauthBtn.github { background: #222; color: #fff; }
+.oauthBtn.github:hover { background: #444; }
+.oauthIcon {
+    font-size: 1.25em;
+}
+@media (max-width: 1100px) {
+    .loginCardWrap {
+        flex-direction: column;
+        width: 95vw;
+        height: auto;
+        min-height: 600px;
+        max-width: 95vw;
+    }
+    .leftPanel, .rightPanel { min-height: 310px; }
+}
+@media (max-width: 600px) {
+    .loginCardWrap { flex-direction: column; width: 100vw; border-radius: 0; margin: 0; }
+    .leftPanel { display: none; }
+    .rightPanel { width: 100vw; }
+    .loginContent { width: 96vw; max-width: 400px; min-width: 0; }
+}

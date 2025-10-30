@@ -1,0 +1,109 @@
+.heroRoot {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(110deg, #15223c 70%, #f9844a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.heroLeft {
+  flex: 1.15;
+  padding-left: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  min-width: 340px;
+}
+.appTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.appSubtitle {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 36px;
+  color: #ffedbd;
+  max-width: 480px;
+}
+.featureList {
+  display: flex;
+  gap: 1.05rem;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.featureChip {
+  background: #fff1e2;
+  color: #15223c;
+  font-weight: 600;
+  border-radius: 24px;
+  font-size: 1rem;
+  padding: 7px 18px;
+  box-shadow: 0 2px 8px #00000010;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+.heroRight {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroLoginBox {
+  background: rgba(19,28,52,0.85);
+  border-radius: 24px;
+  padding: 36px 44px;
+  box-shadow: 0 2px 9px #0004;
+  min-width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroLoginBox h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.34rem;
+  margin-bottom: 13px;
+}
+.heroOAuthBtn {
+  width: 268px;
+  padding: 14px 0;
+  border-radius: 12px;
+  background: #fff;
+  color: #222;
+  border: none;
+  font-size: 1.04rem;
+  font-weight: 600;
+  margin: 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  transition: background 0.14s, color 0.14s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0a2e5233;
+}
+.heroOAuthBtn.google { border: 1.3px solid #dd4a38; }
+.heroOAuthBtn.google:hover { background: #f8f8f8; color: #dd4a38; }
+.heroOAuthBtn.facebook { background: #3b5998; color: #fff; border: none; }
+.heroOAuthBtn.facebook:hover { background: #0e1f49; color: #fff; }
+.heroOAuthBtn.github { background: #181717; color: #eee; border: none; }
+.heroOAuthBtn.github:hover { background: #474747; color: #fff; }
+.heroOAuthIcon {
+  font-size: 1.28em;
+}
+@media (max-width: 900px) {
+  .heroRoot { flex-direction: column; padding: 0 0 18vw 0; }
+  .heroLeft { padding: 52px 6vw 24px 6vw; min-width: 0; align-items: center; justify-content: start; text-align: center; }
+  .appTitle { font-size: 2.5rem; }
+  .appSubtitle { font-size: 1rem; }
+  .heroRight { justify-content: center; width: 100vw; }
+  .heroLoginBox { box-shadow: none; }
+}
+
