@@ -22,6 +22,10 @@
   letter-spacing: 0.5px;
   line-height: 1.1;
   margin-bottom: 12px;
+  background: linear-gradient(90deg,#ffd166 0%,#fca311 25%,#ef476f 60%,#5bf8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .appSubtitle {
   font-size: 1.25rem;
@@ -37,13 +41,13 @@
   flex-wrap: wrap;
 }
 .featureChip {
-  background: #fff1e2;
-  color: #15223c;
-  font-weight: 600;
+  background: linear-gradient(120deg,#ffe29f 0%,#ffa99f 50%,#ff719a 100%);
+  color: #1d2540;
+  font-weight: 700;
   border-radius: 24px;
   font-size: 1rem;
-  padding: 7px 18px;
-  box-shadow: 0 2px 8px #00000010;
+  padding: 9px 18px;
+  box-shadow: 0 6px 18px #ff719a55, 0 0 12px #5bf8ff30 inset;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   letter-spacing: 0.03em;
@@ -106,4 +110,5 @@
   .heroRight { justify-content: center; width: 100vw; }
   .heroLoginBox { box-shadow: none; }
 }
+
 

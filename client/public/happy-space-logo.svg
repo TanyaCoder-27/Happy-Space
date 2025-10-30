@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="35%" stop-color="#fca311"/>
+      <stop offset="70%" stop-color="#ef476f"/>
+      <stop offset="100%" stop-color="#5bf8ff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="40" fill="#141b2d"/>
+  <!-- Orbit ring -->
+  <circle cx="128" cy="120" r="64" fill="none" stroke="url(#g)" stroke-width="8" filter="url(#glow)"/>
+  <!-- Planet -->
+  <circle cx="128" cy="120" r="40" fill="url(#g)"/>
+  <!-- Smile -->
+  <path d="M110 128q18 22 36 0" fill="none" stroke="#0b1022" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="114" cy="112" r="4" fill="#0b1022"/>
+  <circle cx="142" cy="112" r="4" fill="#0b1022"/>
+  <!-- Sparkles -->
+  <g fill="#fff">
+    <circle cx="48" cy="64" r="2"/>
+    <circle cx="210" cy="54" r="2"/>
+    <circle cx="220" cy="180" r="2"/>
+    <circle cx="40" cy="196" r="2"/>
+  </g>
+  <!-- Title -->
+  <text x="50%" y="210" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#g)">Happy Space</text>
+</svg>

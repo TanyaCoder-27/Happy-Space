@@ -207,6 +207,66 @@ app.get('/api/history', ensureAuthenticated, async (req, res) => {
   }
 });
 
+// Add/append images to user's downloads
+app.post('/api/downloads', ensureAuthenticated, async (req, res) => {
+  const { images } = req.body;
+  if (!Array.isArray(images) || !images.length) return res.status(400).json({ error: 'No images provided' });
+  try {
+    const user = await User.findByIdAndUpdate(
+      req.user._id,
+      { $push: { downloads: { $each: images.map(img => ({ ...img, timestamp: new Date() })) } } },
+      { new: true }
+    );
+    res.json({ downloads: user.downloads });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to save downloads' });
+  }
+});
+// Get all user downloads
+app.get('/api/downloads', ensureAuthenticated, async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id);
+    res.json({ downloads: user.downloads || [] });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch downloads' });
+  }
+});
+// Add or remove an image from favourites
+app.post('/api/favourites', ensureAuthenticated, async (req, res) => {
+  const { image, action } = req.body; // action: 'add' or 'remove'
+  if (!image || !image.unsplashId) return res.status(400).json({ error: 'Invalid image' });
+  try {
+    let user;
+    if (action === 'remove') {
+      user = await User.findByIdAndUpdate(
+        req.user._id,
+        { $pull: { favourites: { unsplashId: image.unsplashId } } },
+        { new: true }
+      );
+    } else {
+      // add only if not exists
+      user = await User.findOneAndUpdate(
+        { _id: req.user._id, 'favourites.unsplashId': { $ne: image.unsplashId } },
+        { $push: { favourites: { ...image, timestamp: new Date() } } },
+        { new: true }
+      );
+      if (!user) user = await User.findById(req.user._id); // fallback, doesn't break
+    }
+    res.json({ favourites: user.favourites });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to update favourites' });
+  }
+});
+// Get all user favourites
+app.get('/api/favourites', ensureAuthenticated, async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id);
+    res.json({ favourites: user.favourites || [] });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch favourites' });
+  }
+});
+
 // Mongoose connection stub
 mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/udstudios', {
   useNewUrlParser: true,
